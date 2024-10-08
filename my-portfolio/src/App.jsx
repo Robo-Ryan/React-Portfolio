@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Footer from './components/Footer';
-import AboutMe from './components/AboutMe.jsx';
+import Footer from './components/footer';
+import AboutMe from './components/AboutMe'; // Adjust extension if needed
 import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
+import Contact from './components/contact'; // Adjust case if needed
+import Resume from './components/resume';   // Adjust extension if needed
+
 
 function App() {
   return (

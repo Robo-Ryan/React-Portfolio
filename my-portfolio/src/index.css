@@ -1,68 +1,114 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+/* General styles */
 body {
   margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #004466;
+  color: #fff;
+  padding: 1rem;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+header h1 {
+  margin: 0;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+nav li {
+  margin-left: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a.active {
+  border-bottom: 2px solid #fff;
+}
+
+/* Footer styles */
+footer {
+  background-color: #004466;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+/* Section styles */
+section {
+  padding: 2rem;
+}
+
+/* Project grid */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-card {
+  flex: 1 1 calc(33.333% - 1rem);
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-card h3 {
+  margin-top: 0.5rem;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 0.5rem;
+  color: #004466;
+}
+
+/* Contact form */
+form div {
+  margin-bottom: 1rem;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.8rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .project-card {
+    flex: 1 1 100%;
   }
-  a:hover {
-    color: #747bff;
+
+  nav ul {
+    flex-direction: column;
   }
-  button {
-    background-color: #f9f9f9;
+
+  nav li {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
   }
 }
