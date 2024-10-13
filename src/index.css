@@ -87,6 +87,14 @@ section {
   color: #004466;
 }
 
+.image {
+  width: 100%; 
+  max-width: 300px; 
+  height: auto; 
+  display: block; /* Removes any inline spacing if necessary */
+  margin: 0 auto; /* Centers the image */
+}
+
 /* Contact form */
 form div {
   margin-bottom: 1rem;

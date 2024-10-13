@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+.image {
+  width: 100%; /* Makes the image responsive */
+  max-width: 100px; /* Restricts the image from exceeding 300px in width */
+  height: auto; /* Ensures the aspect ratio is maintained */
+  display: block; /* Removes any inline spacing if necessary */
+  margin: 0 auto; /* Centers the image */
+}
