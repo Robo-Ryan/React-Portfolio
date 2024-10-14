@@ -9,7 +9,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #004466;
+  background-color: #0c82be;
   color: #fff;
   padding: 1rem;
 }
@@ -92,7 +92,6 @@ section {
   max-width: 300px; 
   height: auto; 
   display: block; /* Removes any inline spacing if necessary */
-  margin: 0 auto; /* Centers the image */
 }
 
 /* Contact form */

@@ -9,7 +9,14 @@ function Resume() {
         </p>
         <h3>Proficiencies</h3>
         <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Git</li>
+          <li>Bootstrap</li>
+          <li>Tailwind</li>
+          <li>RESTful APIs</li>
           <li>JavaScript</li>
+          <li>Typescript</li>
           <li>React</li>
           <li>Node.js</li>
           <li>Express.js</li>
